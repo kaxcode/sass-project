@@ -1,3 +1,7 @@
+a {
+  font-style: italic;
+  text-decoration: none; }
+
 body {
   font-family: Verdana, Arial, sans-serif;
   color: #222222; }
@@ -22,7 +26,7 @@ a {
 
 #header {
   border-radius: 6px;
-  border: 1px solid #333;
+  boder: 1px solid #333;
   height: 60px;
   background-color: #170a48; }
   #header #main-menu li {
