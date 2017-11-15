@@ -5,6 +5,13 @@
   color: #fff;
 }
 
+@mixin large-text {
+  font: {
+    size: 22px;
+    weight: bold;
+  }
+}
+
 body {
   font-family: $text-font;
   color: $text-color;
@@ -12,6 +19,10 @@ body {
 
 h1, h2, h3, h4 {
   font-family: $headline-font;
+}
+
+h2 {
+  @include large-text;
 }
 
 p {
