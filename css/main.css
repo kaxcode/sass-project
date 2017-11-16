@@ -25,8 +25,8 @@ a {
   padding: 8px 12px; }
 
 #header {
-  border-radius: 6px;
-  boder: 1px solid #000;
+  border-radius: 12px;
+  boder: 1px solid #fff;
   height: 60px;
   background-color: #170a48; }
   #header #main-menu li {

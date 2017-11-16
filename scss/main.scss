@@ -30,7 +30,7 @@ a {
 }
 
 #header {
-  @include box;
+  @include box($border: 1px solid #fff, $radius:12px);
   height: $header-height;
   background-color: $theme-color;
 
