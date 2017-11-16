@@ -1,27 +1,33 @@
 @mixin warning {
     background-color: orange;
     color: #fff;
-  }
+}
+
+@mixin box-shadown($shadows...) {
+    box-shadow: $shadows;
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+}
   
-  @mixin large-text {
+@mixin large-text {
     font: {
-      size: 22px;
-      weight: bold;
+        size: 22px;
+        weight: bold;
     }
-  }
-  
-  @mixin rounded($radius: 6px) {
+}
+
+@mixin rounded($radius: 6px) {
     border-radius: $radius;
-  }
-  
-  @mixin box($radius: 6px, $border: 1px solid #000) {
+}
+
+@mixin box($radius: 6px, $border: 1px solid #000) {
     @include rounded($radius);
     boder: ($border);
-  }
-  
-  @mixin fancy-links {
+}
+
+@mixin fancy-links {
     a {
-      font-style: italic;
-      text-decoration: none;
+        font-style: italic;
+        text-decoration: none;
     }
-  }
+}
