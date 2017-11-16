@@ -1,49 +1,52 @@
-/*
-Error: Invalid CSS after "...econdary-color)": expected "}", was "height: $header..."
-        on line 35 of scss/main.scss
+a {
+  font-style: italic;
+  text-decoration: none; }
 
-30: }
-31: 
-32: #header {
-33:   @include box($border: 1px solid #fff, $radius:12px);
-34:   @include box-shadow(2px 0px 4px #999, 1px 1px 6px $secondary-color)
-35:   height: $header-height;
-36:   background-color: $theme-color;
-37: 
-38:   #main-menu {
-39:     
-40:     li {
+body {
+  font-family: Verdana, Arial, sans-serif;
+  color: #222222; }
 
-Backtrace:
-scss/main.scss:35
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1278:in `expected'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1208:in `expected'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1203:in `tok!'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:679:in `block'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:670:in `ruleset'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:696:in `block_child'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:689:in `block_contents'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:41:in `parse'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:414:in `_to_tree'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Users/keniavalladarez/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...econdary-color)\": expected \"}\", was \"height: $header...\"\A         on line 35 of scss/main.scss\A \A 30: }\A 31: \A 32: #header {\A 33:   @include box($border: 1px solid #fff, $radius:12px);\A 34:   @include box-shadow(2px 0px 4px #999, 1px 1px 6px $secondary-color)\A 35:   height: $header-height;\A 36:   background-color: $theme-color;\A 37: \A 38:   #main-menu {\A 39:     \A 40:     li {"; }
+h1, h2, h3, h4 {
+  font-family: "Palatino Linotype", Georgia, serif; }
+
+h2 {
+  font-size: 22px;
+  font-weight: bold; }
+
+p {
+  font-family: Verdana, Arial, sans-serif; }
+
+a {
+  color: #f27731; }
+
+.warning-button {
+  background-color: orange;
+  color: #fff;
+  padding: 8px 12px; }
+
+* html body {
+  font-size: 125%; }
+
+#header {
+  border-radius: 12px;
+  boder: 1px solid #fff;
+  box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  height: 60px;
+  background-color: #170a48; }
+  #header #main-menu li {
+    display: inline; }
+  #header #main-menu a {
+    color: white; }
+
+#main {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#footer {
+  height: 90px;
+  background-color: #ccf962; }
+
+/*# sourceMappingURL=main.css.map */
