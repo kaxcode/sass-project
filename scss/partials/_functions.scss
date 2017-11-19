@@ -3,5 +3,5 @@
 }
 
 @function em($pixels, $context: 16px) {
-    @return ($pixesl/ $context) * 1em;
+    @return ($pixels/ $context) * 1em;
 }
