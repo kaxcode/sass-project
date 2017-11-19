@@ -12,6 +12,7 @@ body {
   color: $text-color;
   color: rgb(10, 15, 50);
   background-color: hsl(60, 50%, 100%);
+  font-size: em(18px);
 
   @include large-screens {
     font-size: 125%
