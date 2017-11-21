@@ -39,6 +39,13 @@ a {
 * html body {
   font-size: 125%; }
 
+.error, .critical-error {
+  color: red; }
+
+.critical-error {
+  bottom: 1px solid red;
+  font-weight: bold; }
+
 #header {
   border-radius: 12px;
   boder: 1px solid #fff;

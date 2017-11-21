@@ -50,6 +50,17 @@ a {
   }
 }
 
+.error {
+  color: red;
+}
+
+.critical-error {
+  @extend .error;
+  bottom: 1px solid red;
+  font-weight: bold;
+}
+
+
 #header {
   @include box($border: 1px solid #fff, $radius:12px);
   @include box-shadow(2px 0px 4px #999, 1px 1px 6px $secondary-color);
