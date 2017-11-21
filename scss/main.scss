@@ -46,8 +46,14 @@ a {
 
 .cta-button {
   @extend .warning-button;
+  @extend .error;
   @include rounded;
   font-weight: bold;
+}
+
+.super-cta-button{
+  @extend .cta-button;
+  font-size: em(20px);
 }
 
 @include apply-to-ie-6 {
