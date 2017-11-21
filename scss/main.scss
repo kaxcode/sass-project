@@ -44,6 +44,12 @@ a {
   padding: 8px 12px;
 }
 
+.cta-button {
+  @extend .warning-button;
+  @include rounded;
+  font-weight: bold;
+}
+
 @include apply-to-ie-6 {
   body {
     font-size: 125%
